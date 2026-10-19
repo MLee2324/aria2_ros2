@@ -1,0 +1,24 @@
+# Every setting of a run. Copy this file to change it, or override one key with
+# `ros2 run aria_ros2 aria_node --ros-args --params-file <file> -p stream.interface:=usb`.
+aria:
+  ros__parameters:
+    device:
+      ip: ''                  # glasses' Wi-Fi IP for a cable-free start; empty finds them over USB
+      serial: ''
+      wifi_control: true      # with Wi-Fi streaming, move control to Wi-Fi so the cable can come off
+    stream:
+      enable: true            # stream at start; toggle with the /aria/set_streaming service
+      interface: wifi_sta     # wifi_sta (LAN), wifi_sap (glasses hotspot) or usb
+      profile: profile9
+      host: 0.0.0.0           # address the receiver listens on for the glasses
+      port: 6768
+      shutdown_timeout: 10.0  # seconds before exit is forced when the SDK hangs
+    gaze:
+      depth: 1.0              # metres, used when the glasses report no gaze depth
+    viewer:
+      enable: true            # show the streams in Meta's Rerun viewer, aria_streaming_viewer
+      jpeg_quality: 50
+      memory_limit: 4GB
+    record:
+      enable: true            # save config.yaml, vrs/ and clock.csv per streaming session
+      output_dir: data/aria

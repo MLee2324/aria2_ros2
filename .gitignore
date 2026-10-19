@@ -1,0 +1,25 @@
+# Python environment and colcon output, rebuilt by setup_env.sh
+.venv/
+build/
+install/
+log/
+
+# Streaming sessions and recordings
+data/
+*.vrs
+
+# Streaming certificates and keys stay in ~/.aria
+*.pem
+*.key
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
