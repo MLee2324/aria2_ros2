@@ -3,8 +3,8 @@
 aria:
   ros__parameters:
     device:
-      ip: ''                  # glasses' Wi-Fi IP for a cable-free start; empty finds them over USB
-      serial: ''
+      ip: '10.195.64.139'                  # glasses' Wi-Fi IP for a cable-free start; empty finds them over USB
+      serial: '1M0YDD6HB40566'
       wifi_control: true      # with Wi-Fi streaming, move control to Wi-Fi so the cable can come off
     stream:
       enable: true            # stream at start; toggle with the /aria/set_streaming service
