@@ -3,8 +3,8 @@
 aria:
   ros__parameters:
     device:
-      ip: '10.195.64.139'                  # glasses' Wi-Fi IP for a cable-free start; empty finds them over USB
-      serial: '1M0YDD6HB40566'
+      ip: ''                  # glasses' Wi-Fi IP for a cable-free start; empty finds them over USB
+      serial: ''
       wifi_control: true      # with Wi-Fi streaming, move control to Wi-Fi so the cable can come off
     stream:
       enable: true            # stream at start; toggle with the /aria/set_streaming service
@@ -16,7 +16,7 @@ aria:
     gaze:
       depth: 1.0              # metres, used when the glasses report no gaze depth
     viewer:
-      enable: true            # show the streams in Meta's Rerun viewer, aria_streaming_viewer
+      enable: true           # show the streams in Meta's Rerun viewer, aria_streaming_viewer
       jpeg_quality: 50
       memory_limit: 4GB
     record:
