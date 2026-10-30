@@ -19,9 +19,9 @@ from sensor_msgs.msg import Image
 from std_msgs.msg import String
 from std_srvs.srv import SetBool
 
-from aria_ros2 import config, messages
-from aria_ros2.glasses import AriaGlasses
-from aria_ros2.session import Session
+from aria_driver import config, messages
+from aria_driver.glasses import AriaGlasses
+from aria_driver.session import Session
 
 # Receiver stream name to viewer callback, for the streams that only the viewer draws.
 VIEWER_STREAMS = {'slam': 'image_callback', 'et': 'image_callback',
